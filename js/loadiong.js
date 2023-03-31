@@ -11,4 +11,7 @@ window.addEventListener('load', () => {
       loader.style.display = 'none'
     },500)
   },2000)
-})
+});
+
+
+

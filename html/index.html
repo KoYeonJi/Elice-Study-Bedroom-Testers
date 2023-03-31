@@ -8,44 +8,34 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/common.css">
   <script defer src="../js/loadiong.js"></script>
+
 </head>
 <body>
-  <div id="loadingPage">
-    <div id="loadingImgBox">
-      <img src="../etc/imgs/loading.gif" alt="강아지 움직이는 사진"/>
-      <p>로딩중...</p>
-    </div>
-  </div>
+  <loading-page></loading-page>
   <header>
 
   </header>
   <main>
    <section class="container">
-    <div class="card">
-      <section>
-        <img src="../etc/imgs/main_dog.svg" alt="메인이미지"/>
-      </section>
-      <section>
-        <h1>
-          안녕하세요.<br/>
-          <strong>'PuppyTest'</strong>오신걸<br/>
-          환영합니다!
-        </h1>
-        <h2>나의 강아지와 나는 과연?!</h2>
-        <a class="btn" href="#">start</a>
-        <!-- <div class="radio_box">
-            <input type="radio" id="q1_yes" name="question1" value="YES"/>
-            <label for="q1_yes" class="radio_btn">YES</label>
-            <input type="radio" id="q1_no" name="question1"/>
-            <label for="q1_no" class="radio_btn">NO</label>
-        </div> -->
-       </section>
-      </section>
-    </div>
+    <card-layout 
+      imgSrc="../etc/imgs/main_dog.svg" 
+      imgAlt="메인이미지"
+      qusTit=""
+      qusSub=""
+      qusPara="null"
+      nextBtnHref="#"
+      nextBtnTxt="START"
+    >
+    </card-layout>
+    </section>
   </main>
   <footer>
 
   </footer>
-
+  <script src="../js/loadingPage.js"></script>
+  <script src="../js/imgSection.js"></script>
+  <script src="../js/questionSection.js"></script>
+  <script src="../js/nextBtn.js"></script>
+  <script src="../js/card.js"></script>
 </body>
 </html>

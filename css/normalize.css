@@ -375,10 +375,8 @@ a {
   text-decoration: none;
 }
 
-a,
 a:focus,
-a:active,
-a:visited {
+a:active{
   color: inherit;
 }
 

@@ -132,6 +132,7 @@ main .container .card h2{
   letter-spacing: 0.03em;
   line-height: 41px;
   color: #FA6363;
+  cursor: pointer;
 }
 input[type="radio"]:hover + label
 ,input[type="radio"]:checked + label{
