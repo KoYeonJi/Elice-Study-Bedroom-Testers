@@ -387,3 +387,7 @@ button {
   background-color: transparent;
   color: inherit;
 }
+
+progress{
+  appearance: none;
+}
