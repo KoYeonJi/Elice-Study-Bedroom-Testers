@@ -8,29 +8,26 @@ class RadioButton extends HTMLElement{
     let labelFor = this.getAttribute('fors').split(',')
     let inputValue = this.getAttribute('values').split(',')
 
-    const nextBtnEl = document.querySelector('.btn')
-
-    const radioBtn1 = document.querySelector(`input[name=${name[0]}]`)
-    const radioBtn2 = document.querySelector(`input[name=${name[1]}]`)
-    
     for(let i =0 ; i < id.length; i++){
-      this.innerHTML += `<input type="radio" id=${id[i]} name=${name[i]} value=${inputValue[i]} />
+      this.innerHTML += `<input type="radio" id=${id[i]} name=${name[i]} value=${inputValue[i]} >
       <label for=${labelFor[i]} class="radio_btn">${inputValue[i]}</label>`
-
-      const radioBtn1 = document.querySelector(`input[name=${name[0]}]`)
-      const radioBtn2 = document.querySelector(`input[name=${name[1]}]`)
-
-
-      radioBtn1.addEventListener('click',function(){
-        console.log(radioBtn1.value)
-      })
-
-      radioBtn2.addEventListener('click',function(){
-        console.log(radioBtn2.value)
-      })
     }
 
+    const inputFirst = this.childNodes[0]
+    const inputSecond = this.childNodes[3]
    
+    const nextBtnEl = document.querySelector('next-btn')
+    
+    inputFirst.addEventListener('click',(e) => {
+      nextBtnEl.removeAttribute('style')
+      nextBtnEl.classList = 'on'      
+      this.style.marginBottom = 80+'px'
+    })
+    inputSecond.addEventListener('click',(e) => {
+      nextBtnEl.removeAttribute('style')
+      nextBtnEl.classList = 'on'
+      this.style.marginBottom = 80+'px'
+    })
   }
 }
 customElements.define('radio-btn',RadioButton)

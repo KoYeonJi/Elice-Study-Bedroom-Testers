@@ -33,7 +33,7 @@ class Card extends HTMLElement{
                                       values=${radioInputValues}
                                       fors=${radioLabelFors}
                                   ></radio-btn>
-                                  <next-btn address=${nextBtnHref} text=${nextBtnTxt}></next-btn>
+                                  <next-btn address=${nextBtnHref} text=${nextBtnTxt} style='display:none'></next-btn>
                                 `
                                   
           } 
@@ -41,6 +41,7 @@ class Card extends HTMLElement{
        
       </section>
     ` 
+    
   }
   // static get observedAttributes(){
   //   return [imgSrc, imgAlt, qusTit, qusSub, qusPara, nextBtnHref, 

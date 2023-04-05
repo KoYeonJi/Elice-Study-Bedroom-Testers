@@ -3,14 +3,15 @@ class QuestionSection extends HTMLElement{
     this.style.display = 'block';
 
     let titleInfo = this.getAttribute('titleInfo')
-    let subTitleInfo = this.getAttribute('subTitleInfo').split(',')
+    let subTitleInfo = this.getAttribute('subTitleInfo')
     let paraInfo = this.getAttribute('paraInfo')
     let qusNum = this.getAttribute('qusNum')
   
     if(titleInfo === "null"){
+      const subTitleValue = subTitleInfo.split(',')
       this.innerHTML = `
-          <h2>${subTitleInfo[0].split('_').join(' ')}</h2>
-          <h3>${subTitleInfo[1].split('_').join(' ')}</h3>
+          <h2>${subTitleValue[0].split('_').join(' ')}</h2>
+          <h3>${subTitleValue[1].split('_').join(' ')}</h3>
           <p class="question"><span class="number">Q${qusNum}.</span> ${paraInfo.split('_').join(' ')}</p>
       `
     }else if(paraInfo === "null" ){
