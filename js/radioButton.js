@@ -17,17 +17,23 @@ class RadioButton extends HTMLElement{
     const inputSecond = this.childNodes[3]
    
     const nextBtnEl = document.querySelector('next-btn')
-    
+
+    let keyValue = String(location.href.split('/').pop().split('.',1))
+ 
     inputFirst.addEventListener('click',(e) => {
       nextBtnEl.removeAttribute('style')
       nextBtnEl.classList = 'on'      
       this.style.marginBottom = 80+'px'
+      localStorage.setItem(keyValue, e.target.value)
     })
+
     inputSecond.addEventListener('click',(e) => {
       nextBtnEl.removeAttribute('style')
       nextBtnEl.classList = 'on'
       this.style.marginBottom = 80+'px'
+      localStorage.setItem(keyValue, e.target.value)
     })
+
   }
 }
 customElements.define('radio-btn',RadioButton)

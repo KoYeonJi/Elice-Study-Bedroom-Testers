@@ -41,29 +41,13 @@ class Card extends HTMLElement{
        
       </section>
     ` 
-    
   }
-  // static get observedAttributes(){
-  //   return [imgSrc, imgAlt, qusTit, qusSub, qusPara, nextBtnHref, 
-  //     nextBtnTxt, radioIds, radioNames, radioLabelFors, radioInputValues]
-  // }
-  // attributeChangedCallback(){
-  //   this.innerHTML = `
-  //   <img-section imgInfo=${imgSrc} imgDes=${imgAlt}></img-section>
-  //   <section>
-  //     ${qusTit === "null" ? `<progress-bar proVal=${progressValue} totalValue=${proTotal}></progress-bar>` : ''}
-  //     <question-section titleInfo=${qusTit} subTitleInfo=${qusSub} paraInfo=${qusPara}></question-section>
-     
-  //     ${radioIds === null ? '' : `<radio-btn 
-  //                                   ids=${radioIds} 
-  //                                   names=${radioNames} 
-  //                                   values=${radioInputValues}
-  //                                   fors=${radioLabelFors}`} 
-  //     <next-btn address=${nextBtnHref} text=${nextBtnTxt}></next-btn>
-  //   </section>
-  // ` 
-  // }
 }
 
 
 customElements.define('card-layout',Card)
+
+
+// export class resultValue extends Card{
+  
+// }

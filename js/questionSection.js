@@ -10,9 +10,9 @@ class QuestionSection extends HTMLElement{
     if(titleInfo === "null"){
       const subTitleValue = subTitleInfo.split(',')
       this.innerHTML = `
-          <h2>${subTitleValue[0].split('_').join(' ')}</h2>
+          <h2 style="font-size:2.2rem;">${subTitleValue[0].split('_').join(' ')}</h2>
           <h3>${subTitleValue[1].split('_').join(' ')}</h3>
-          <p class="question"><span class="number">Q${qusNum}.</span> ${paraInfo.split('_').join(' ')}</p>
+          <p class="question">Q${qusNum}.${paraInfo.split('_').join(' ')}</p>
       `
     }else if(paraInfo === "null" ){
       this.innerHTML = `

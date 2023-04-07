@@ -88,17 +88,14 @@ main .container .card h2{
 main .container .card h3{
   margin-top: -59px;
   margin-bottom: 22px;
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 main .container .card p.question{
 margin-bottom: 39px;
-font-size: 2.0rem;
-font-weight: 400;
+font-size: 2.8rem;
+font-weight: 900;
 line-height: 33px;
-}
-main .container .card p.question .number{
-  font-weight: 700;
 }
 /*
 * button style
@@ -184,6 +181,26 @@ progress::-webkit-progress-bar{
 progress::-webkit-progress-value{
   border-radius: 15px;
   background: #FA6363;
+}
+
+#last_img img{
+  width: 218px;
+  height: 309px;
+}
+#result{
+  font-size: 4.2rem;
+  font-weight: 900;
+}
+#subResult{
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#subResult p{
+  margin-bottom: 6px;
+}
+#reStart a{
+  margin-top: 0;
 }
 
 
